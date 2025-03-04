@@ -2,7 +2,7 @@
 
 Here you can find writeups for:
 
-. [X] Tryhackme machines
+- [X] Tryhackme machines
 - [ ] Hackthebox machines
 - [ ] exploits
 - [ ] malware
