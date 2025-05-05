@@ -1,6 +1,6 @@
 ---
 title: Simple_Http_Server - pwncollege
-date: 2025-05-05 18:25:00 +0100
+date: 2025-05-04 18:25:00 +0100
 categories: [pwncollege]
 tags: [assembly]
 author: omar 
