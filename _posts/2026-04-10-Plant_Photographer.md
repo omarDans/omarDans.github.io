@@ -4,10 +4,10 @@ date: 2026-04-10 14:30:00 +0100
 categories: [tryhackme, linux]
 tags: [SSRF, LFI, RCE]
 author: omar 
-description: Tryhackme hard machine
+description: Tryhackme hard machine.
 toc: true
 image:
-  path: /images/thm/Billing/billingLogo.png
+  path: /images/thm/plantPhotographer/logo.png
 ---
 
 ### Introduction
