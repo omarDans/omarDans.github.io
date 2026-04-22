@@ -69,7 +69,7 @@ server.serve_forever()
 
 All the headers will be printed to stdout on every requests so, just like that, we get the first flag:
 
-![first_flag](/images/thm/plantPhotographer/3_get_request_with_headers)
+![first_flag](/images/thm/plantPhotographer/3_get_request_with_headers.png)
 
 ### Second flag
 
