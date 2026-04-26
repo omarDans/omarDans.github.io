@@ -120,7 +120,7 @@ You should get the content of the /etc/passwd file which proofs that we have LFI
 
 So what can we do? While i was testing things for getting the second flag i was able to trigger ( multiple times ) and error in the server that gave me the error traceback which spits a bunch of information look at the image:
 
-![error_message](/images/thm/plantPhotographer/5_error_message.png)
+![error_message](/images/thm/plantPhotographer/5_error_mesage.png)
 
 in this case i added alphabetic characters into the **id** parameter which throws and error while trying to convert them to **integers**. As you can see in the traceback is giving you a bunch of interesting paths that will be used later.
 
